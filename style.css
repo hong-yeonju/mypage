@@ -1,72 +1,136 @@
 body {
     margin: 0;
     font-family: 'Noto Sans KR', Arial, sans-serif;
-    background: #ffedc5; /* 노란색 배경 */
-    color: #1a237e;      /* 남색 텍스트 */
-    scroll-behavior: smooth;
-}
-
-.container {
-    width: 90%;
-    max-width: 500px;
-    margin: 50px auto;
-    background: #ffe066; /* 노란색 배경 */
-    border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(200, 200, 0, 0.08);
-    padding: 32px 24px;
-    border: 3px solid #b5cc18;
-}
-
-h1, h2, .info p, .skills li, .log li, .skills-list li, .range-value, ul, li, p, strong {
-    color: #1a237e !important; /* 모든 텍스트 남색 */
-}
-
-.skills-list li {
-    background: #fff9ac;
-    border-left: 8px solid #b5cc18;
-    margin-bottom: 10px;
-    padding: 12px 16px;
-    border-radius: 12px;
-    font-size: 1.05rem;
+    background: #fff;
+    color: #1a237e;
+  }
+  
+  .top-section {
+    background: #ffe066;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    box-shadow: 0 2px 16px rgba(200, 200, 0, 0.08);
+    padding: 32px 0 24px 0;
+  }
+  
+  .header-inner {
     display: flex;
     align-items: center;
-    gap: 12px;
-}
-
-.skills-list input[type="range"] {
-    accent-color: #1a237e;
+    justify-content: center;
+    gap: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .shuttlecock-illustration {
+    flex-shrink: 0;
+    background: #fffde7;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(200, 200, 0, 0.10);
+  }
+  
+  .header-text h1 {
+    margin: 0 0 8px 0;
+    font-size: 2rem;
+    color: #1a237e;
+    font-weight: 800;
+    letter-spacing: -1px;
+  }
+  
+  .info {
+    display: flex;
+    gap: 18px;
+    font-size: 1.05rem;
+    color: #1a237e;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 32px auto 0 auto;
+    padding: 0 16px;
+  }
+  
+  .skills-card, .log-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(200, 200, 0, 0.08);
+    padding: 28px 24px 20px 24px;
+    margin-bottom: 28px;
+  }
+  
+  .skills-card h2, .log-card h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+    color: #1a237e;
+    font-weight: 700;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #f9fbe7;
+    border-left: 6px solid #ffe066;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    color: #1a237e;
+  }
+  
+  .skills-list input[type="range"] {
+    accent-color: #ffe066;
     width: 120px;
     margin: 0 8px;
-}
-
-.range-value {
+  }
+  
+  .range-value {
     min-width: 40px;
+    color: #1a237e;
     font-weight: bold;
-}
-
-.log li {
-    background: #fff9ac;
-    border-left: 8px solid #b5cc18;
+  }
+  
+  .log-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .log-list li {
+    background: #f9fbe7;
+    border-left: 6px solid #ffe066;
     margin-bottom: 10px;
     padding: 10px 16px;
     border-radius: 12px;
     font-size: 1.05rem;
-    box-shadow: 0 2px 8px rgba(200, 200, 0, 0.06);
-    transition: background 0.2s;
-}
-
-.log li:hover {
-    background: #faffb8;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 16px 6px;
+    color: #1a237e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  @media (max-width: 600px) {
+    .header-inner {
+      flex-direction: column;
+      gap: 10px;
     }
-    h1 {
-        font-size: 1.4rem;
+    .skills-card, .log-card {
+      padding: 16px 8px 12px 8px;
     }
-    h2 {
-        font-size: 1.1rem;
+    .top-section {
+      padding: 20px 0 14px 0;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
     }
-}
+    main {
+      padding: 0 4px;
+    }
+  }
