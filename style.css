@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', Arial, sans-serif;
+    background: #ffedc5; /* 노란색 배경 */
+    color: #1a237e;      /* 남색 텍스트 */
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #ffe066; /* 노란색 배경 */
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(200, 200, 0, 0.08);
+    padding: 32px 24px;
+    border: 3px solid #b5cc18;
+}
+
+h1, h2, .info p, .skills li, .log li, .skills-list li, .range-value, ul, li, p, strong {
+    color: #1a237e !important; /* 모든 텍스트 남색 */
+}
+
+.skills-list li {
+    background: #fff9ac;
+    border-left: 8px solid #b5cc18;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skills-list input[type="range"] {
+    accent-color: #1a237e;
+    width: 120px;
+    margin: 0 8px;
+}
+
+.range-value {
+    min-width: 40px;
+    font-weight: bold;
+}
+
+.log li {
+    background: #fff9ac;
+    border-left: 8px solid #b5cc18;
+    margin-bottom: 10px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 8px rgba(200, 200, 0, 0.06);
+    transition: background 0.2s;
+}
+
+.log li:hover {
+    background: #faffb8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 6px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+}
